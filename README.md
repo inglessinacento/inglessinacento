@@ -7,15 +7,15 @@
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, sans-serif;
 margin:0;
-background:#f4f4f4;
+background:#f5f7fb;
 }
 
 header{
-background:#0b3d91;
+background:linear-gradient(90deg,#0033a0,#ce1126);
 color:white;
-padding:50px;
+padding:60px;
 text-align:center;
 }
 
@@ -32,26 +32,59 @@ text-decoration:none;
 font-weight:bold;
 }
 
+.hero{
+background:url("https://images.unsplash.com/photo-1523240795612-9a054b0db644") center/cover;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:10px;
+}
+
 section{
 padding:50px;
-max-width:900px;
+max-width:1000px;
 margin:auto;
 }
 
 h2{
-color:#0b3d91;
+color:#0033a0;
 }
 
-.services{
+.card{
 background:white;
 padding:30px;
-margin-top:20px;
+margin:20px 0;
 border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.payments{
-background:#eef3ff;
-padding:30px;
+button{
+padding:15px 25px;
+background:#ce1126;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.gallery img{
+width:100%;
 border-radius:10px;
 }
 
@@ -60,16 +93,6 @@ background:#222;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
-}
-
-button{
-padding:12px 20px;
-background:#0b3d91;
-border:none;
-color:white;
-border-radius:6px;
-font-size:16px;
 }
 
 </style>
@@ -82,7 +105,7 @@ font-size:16px;
 
 <h1>Inglés Sin Acento</h1>
 
-<p>Learn English or Spanish with clear pronunciation</p>
+<p>Learn English with natural pronunciation</p>
 
 <p>Instructor: Mauricio</p>
 
@@ -92,61 +115,86 @@ font-size:16px;
 
 <a href="#about">About</a>
 <a href="#lessons">Lessons</a>
+<a href="#students">Students</a>
 <a href="#payments">Payments</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
+<div class="hero">
+
+<h1>Speak English Clearly & Confidently</h1>
+
+</div>
+
 <section id="about">
 
-<h2>About Me</h2>
+<h2>About Mauricio</h2>
+
+<div class="card">
 
 <p>
-My name is Mauricio, a bilingual English and Spanish instructor helping students improve their pronunciation, grammar, and confidence when speaking.
+<p>
+My name is Mauricio, founder of Next Level Sync and creator of Inglés Sin Acento.
+I help Spanish speakers learn English with clear pronunciation and natural conversation.
 </p>
 
 <p>
-Many English teachers in Colombia have noticeable accents that make pronunciation difficult for students to understand. My goal is to teach English with little to no accent so students can communicate clearly and naturally.
+Many English teachers in Colombia have noticeable accents. My goal is to help students
+develop a natural sounding English accent while improving grammar and confidence.
+</p>
 </p>
 
 <p>
-I also teach Spanish to English speakers who want to learn real conversational Spanish used in Latin America and Colombia.
+Many English teachers in Colombia have noticeable accents. My goal is to help students speak English clearly with natural pronunciation and confidence.
 </p>
+
+</div>
 
 </section>
 
 <section id="lessons">
 
-<h2>Lessons</h2>
+<h2>Classes Available</h2>
 
-<div class="services">
+<div class="card">
 
 <h3>English Classes</h3>
 
 <ul>
-
 <li>Accent reduction</li>
 <li>Pronunciation training</li>
-<li>Grammar improvement</li>
 <li>Conversation practice</li>
 <li>Business English</li>
-
 </ul>
 
 </div>
 
-<div class="services">
+<div class="card">
 
 <h3>Spanish Classes</h3>
 
 <ul>
-
 <li>Conversational Spanish</li>
 <li>Latin American Spanish</li>
 <li>Travel Spanish</li>
-<li>Pronunciation training</li>
-
 </ul>
+
+</div>
+
+</section>
+
+<section id="students">
+
+<h2>Students Learning English</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
+
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 
 </div>
 
@@ -156,9 +204,7 @@ I also teach Spanish to English speakers who want to learn real conversational S
 
 <h2>Payment Methods</h2>
 
-<div class="payments">
-
-<p>Students can pay for lessons using:</p>
+<div class="card">
 
 <ul>
 
@@ -169,23 +215,44 @@ I also teach Spanish to English speakers who want to learn real conversational S
 
 </ul>
 
-<p>Contact me after payment to schedule your lesson.</p>
-
 </div>
 
 </section>
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>Book a Lesson</h2>
 
-<p>Book your class with Mauricio:</p>
+<div class="card">
 
-<p>Email: your@email.com</p>
+<p>Contact Mauricio to schedule your class.</p>
 
-<p>WhatsApp: +57 your number</p>
+<section id="contact">
 
-<button>Book a Lesson</button>
+<h2>Book a Lesson with Mauricio</h2>
+
+<div class="card">
+
+<p><strong>Mauricio</strong></p>
+<p>Next Level Sync | English & Spanish Coach</p>
+
+<p>🇨🇴 Colombia Phone: +57 (312) 802-1058</p>
+
+<p>💬 WhatsApp: +1 (407) 920-3371</p>
+
+<p>📧 Email: nextlevelsync.nls@gmail.com</p>
+
+<a href="https://wa.me/14079203371">
+<button>Message on WhatsApp</button>
+</a>
+
+</div>
+
+</section>
+
+<button>Book Your Lesson</button>
+
+</div>
 
 </section>
 
