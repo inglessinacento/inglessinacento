@@ -1,87 +1,70 @@
-Add website homepage
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Inglés Sin Acento | Mauricio</title>
+<title>Inglés Sin Acento | Clases Privadas</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
+font-family:Arial;
 margin:0;
 background:#f5f7fb;
 }
 
 header{
-background:linear-gradient(90deg,#0033a0,#ce1126);
+background:#0033a0;
 color:white;
-padding:60px;
 text-align:center;
+padding:40px;
 }
 
-nav{
-background:#222;
-padding:15px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
+header img{
+width:220px;
 }
 
 .hero{
-background:url("https://images.unsplash.com/photo-1523240795612-9a054b0db644") center/cover;
-height:400px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
 text-align:center;
+padding:40px;
 }
 
 .hero h1{
-background:rgba(0,0,0,0.6);
-padding:20px;
-border-radius:10px;
+font-size:36px;
+color:#0033a0;
+}
+
+.hero p{
+font-size:20px;
+}
+
+button{
+background:#ce1126;
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:6px;
+font-size:18px;
+cursor:pointer;
 }
 
 section{
-padding:50px;
 max-width:1000px;
 margin:auto;
-}
-
-h2{
-color:#0033a0;
+padding:40px;
 }
 
 .card{
 background:white;
 padding:30px;
-margin:20px 0;
+margin-bottom:25px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-button{
-padding:15px 25px;
-background:#ce1126;
-border:none;
-color:white;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
+box-shadow:0px 4px 10px rgba(0,0,0,0.1);
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:15px;
-margin-top:20px;
 }
 
 .gallery img{
@@ -104,127 +87,75 @@ padding:20px;
 
 <header>
 
-<h1>Inglés Sin Acento</h1>
+<img src="logo.png">
 
-<p>Learn English with natural pronunciation</p>
-
-<p>Instructor: Mauricio</p>
+<h2>Clases Privadas de Inglés</h2>
 
 </header>
 
-<nav>
-
-<a href="#about">About</a>
-<a href="#lessons">Lessons</a>
-<a href="#students">Students</a>
-<a href="#payments">Payments</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
 <div class="hero">
 
-<h1>Speak English Clearly & Confidently</h1>
+<h1>Aprende Inglés Sin Acento</h1>
+
+<p>Clases privadas enfocadas en conversación, pronunciación y gramática.</p>
+
+<a href="https://calendar.google.com/calendar/u/0/r?pli=1" target="_blank">
+<button>Reservar Clase</button>
+</a>
 
 </div>
 
-<section id="about">
-
-<h2>About Mauricio</h2>
+<section>
 
 <div class="card">
 
-<p>
-My name is Mauricio, a bilingual English and Spanish instructor helping students improve their pronunciation, grammar, and confidence.
-</p>
+<h2>Precios</h2>
 
-<p>
-Many English teachers in Colombia have noticeable accents. My goal is to help students speak English clearly with natural pronunciation and confidence.
-</p>
+<p><strong>1 clase:</strong> 60.000 COP</p>
 
-</div>
+<p><strong>4 clases:</strong> 230.000 COP</p>
 
-</section>
+<p><strong>8 clases:</strong> 440.000 COP</p>
 
-<section id="lessons">
-
-<h2>Classes Available</h2>
-
-<div class="card">
-
-<h3>English Classes</h3>
-
-<ul>
-<li>Accent reduction</li>
-<li>Pronunciation training</li>
-<li>Conversation practice</li>
-<li>Business English</li>
-</ul>
+<p>Duración: 60 minutos</p>
 
 </div>
 
 <div class="card">
 
-<h3>Spanish Classes</h3>
+<h2>Pagar con Bancolombia</h2>
 
-<ul>
-<li>Conversational Spanish</li>
-<li>Latin American Spanish</li>
-<li>Travel Spanish</li>
-</ul>
+<p>Escanea el código QR y escribe el valor correspondiente.</p>
+
+<img src="bancolombia-qr.png" width="250">
 
 </div>
 
-</section>
+<div class="card">
 
-<section id="students">
+<h2>Reservar tu clase</h2>
 
-<h2>Students Learning English</h2>
+<p>Después de pagar, selecciona tu horario en el calendario.</p>
+
+<a href="https://calendar.google.com/calendar/u/0/r?pli=1" target="_blank">
+<button>Abrir Calendario</button>
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>Estudiantes aprendiendo inglés</h2>
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
-
-<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
-
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 
-</div>
+<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
 
-</section>
-
-<section id="payments">
-
-<h2>Payment Methods</h2>
-
-<div class="card">
-
-<ul>
-
-<li>Zelle</li>
-<li>Cash App</li>
-<li>Bancolombia</li>
-<li>Davivienda</li>
-
-</ul>
+<img src="https://images.unsplash.com/photo-1544717305-2782549b5136">
 
 </div>
-
-</section>
-
-<section id="contact">
-
-<h2>Book a Lesson</h2>
-
-<div class="card">
-
-<p>Contact Mauricio to schedule your class.</p>
-
-<p>Email: your@email.com</p>
-
-<p>WhatsApp: +57 your number</p>
-
-<button>Book Your Lesson</button>
 
 </div>
 
@@ -232,7 +163,7 @@ Many English teachers in Colombia have noticeable accents. My goal is to help st
 
 <footer>
 
-<p>© 2026 Inglés Sin Acento | Mauricio</p>
+<p>© Inglés Sin Acento | Mauricio</p>
 
 </footer>
 
