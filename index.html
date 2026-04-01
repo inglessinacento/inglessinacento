@@ -35,9 +35,87 @@ width:220px;
 
 <div style="text-align:center; margin:30px;">
 
-<video width="320" autoplay muted loop playsinline style="border-radius:10px;">
-  <source src="logo.mp4" type="video/mp4">
-</video>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>English Level Test - Inglés Sin Acento</title>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    .question { margin-bottom:15px; }
+    button { padding:10px 15px; }
+  </style>
+</head>
+<body>
+
+<h2>Prueba rápida de inglés</h2>
+
+<div class="question">
+  1. Choose the correct sentence:<br>
+  <input type="radio" name="q1" value="0"> She go to work everyday<br>
+  <input type="radio" name="q1" value="1"> She goes to work everyday<br>
+</div>
+
+<div class="question">
+  2. What is the past of "eat"?<br>
+  <input type="radio" name="q2" value="1"> Ate<br>
+  <input type="radio" name="q2" value="0"> Eated<br>
+</div>
+
+<div class="question">
+  3. Translate: "Yo estoy aprendiendo inglés"<br>
+  <input type="radio" name="q3" value="1"> I am learning English<br>
+  <input type="radio" name="q3" value="0"> I learning English<br>
+</div>
+
+<button onclick="gradeTest()">Ver resultado</button>
+
+<h3 id="result"></h3>
+
+<script>
+function gradeTest() {
+  let score = 0;
+  const answers = ['q1','q2','q3'];
+
+  answers.forEach(q => {
+    const selected = document.querySelector(`input[name=${q}]:checked`);
+    if (selected && selected.value === "1") score++;
+  });
+
+  let level = "";
+
+  if (score === 3) level = "Intermedio";
+  else if (score === 2) level = "Básico";
+  else level = "Principiante";
+
+  document.getElementById("result").innerText = `Tu nivel es: ${level}`;
+}
+</script>
+
+</body>
+</html>
+
+<!-- DM SCRIPT -->
+<!--
+Hola 😊 vi que estás buscando ayuda con inglés.
+
+
+Cuéntame, ¿para qué necesitas el inglés?
+Dependiendo de eso, te guío mejor.
+-->
+
+<!-- INTRO SCRIPTS -->
+<!--
+BEGINNER:
+No te preocupes si no sabes nada. Yo te llevo paso a paso desde cero.
+
+INTERMEDIATE:
+Te ayudo a soltar el inglés y hablar con confianza.
+
+ADVANCED:
+Pulimos detalles para que suenes natural y profesional.
+-->
+
 
 </div>
 </div>
