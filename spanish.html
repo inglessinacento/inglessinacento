@@ -5,55 +5,19 @@
 <title>Learn Spanish | Inglés Sin Acento</title>
 
 <style>
-body{
-  font-family:Arial;
-  margin:0;
-  background:#f5f7fb;
-  text-align:center;
-}
-
-.topbar{
-  text-align:right;
-  padding:15px;
-}
-
-.topbar button{
-  margin-left:10px;
-}
-
-.hero{
-  background:#0033a0;
-  color:white;
-  padding:60px;
-}
-
-button{
-  padding:12px 20px;
-  font-size:16px;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-}
-
-.card{
-  background:white;
-  padding:25px;
-  margin:20px auto;
-  max-width:800px;
-  border-radius:10px;
-  box-shadow:0px 4px 10px rgba(0,0,0,0.1);
-}
-
-img{
-  max-width:100%;
-  height:auto;
-}
+body{font-family:Arial;margin:0;background:#f5f7fb;text-align:center;}
+.topbar{text-align:right;padding:15px;}
+.topbar button{margin-left:10px;}
+.hero{background:#0033a0;color:white;padding:60px;}
+button{padding:12px 20px;font-size:16px;border:none;border-radius:6px;cursor:pointer;}
+.card{background:white;padding:25px;margin:20px auto;max-width:800px;border-radius:10px;box-shadow:0px 4px 10px rgba(0,0,0,0.1);}
+img{max-width:100%;height:auto;}
+.qr-container{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;}
 </style>
 </head>
 
 <body>
 
-<!-- LANGUAGE SWITCH -->
 <div class="topbar">
   <a href="index.html"><button>🇨🇴 Español</button></a>
   <a href="spanish.html"><button>🇺🇸 English</button></a>
@@ -66,8 +30,7 @@ img{
 
 <div class="card">
 <h2>Instructor</h2>
-<p>Mauricio 🇺🇸/🇨🇴<br>
-Bilingual coach focused on real-life communication</p>
+<p>Mauricio 🇺🇸/🇨🇴<br>Bilingual coach focused on real-life communication</p>
 </div>
 
 <div class="card">
@@ -98,7 +61,7 @@ Bilingual coach focused on real-life communication</p>
 
 <p>5. Ella ___ feliz</p>
 <input type="radio" name="q5" value="1"> está<br>
-<input type="radio" name="q5" value="0"> es (wrong in this context)<br><br>
+<input type="radio" name="q5" value="0"> es<br><br>
 
 <p>6. Translate: "I want water"</p>
 <input type="radio" name="q6" value="1"> Quiero agua<br>
@@ -125,6 +88,30 @@ Bilingual coach focused on real-life communication</p>
 </div>
 
 <div class="card">
+<h2>Payment Methods</h2>
+<p>Please send payment using one of the options below:</p>
+
+<div class="qr-container">
+
+<div>
+<h3>Bancolombia</h3>
+<img src="banco Colombia QR.jpeg" width="200">
+</div>
+
+<div>
+<h3>Cash App</h3>
+<img src="cashapp.png.jpeg" width="200">
+</div>
+
+<div>
+<h3>Zelle</h3>
+<img src="zelle.png.jpeg" width="200">
+</div>
+
+</div>
+</div>
+
+<div class="card">
 <a href="https://calendar.app.google/bAkRXMof3NVRJnfu6" target="_blank">
 <button>Book a Lesson</button>
 </a>
@@ -139,28 +126,15 @@ Bilingual coach focused on real-life communication</p>
 <script>
 function gradeTest(){
 let score = 0;
-
 for(let i=1;i<=10;i++){
 let selected = document.querySelector('input[name="q'+i+'"]:checked');
-
-if(selected){
-if(selected.value==="1"){
-score++;
-}
-}else{
-alert("Please answer all questions");
-return;
-}
-}
-
+if(selected){if(selected.value==="1"){score++;}}else{alert("Please answer all questions");return;}}
 let level="";
 if(score>=8) level="Advanced";
 else if(score>=5) level="Intermediate";
 else level="Beginner";
-
 let message = `Hi, I just took the Spanish test and my level is ${level} (${score}/10). I want to improve my Spanish.`;
 let url = "https://wa.me/573128021058?text=" + encodeURIComponent(message);
-
 window.location.href = url;
 }
 </script>
